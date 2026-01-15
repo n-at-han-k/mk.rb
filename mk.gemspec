@@ -3,7 +3,7 @@
 require_relative "lib/mk/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "mk"
+  spec.name = "mk.rb"
   spec.version = Mk::VERSION
   spec.authors = ["Nathan Kidd"]
   spec.email = ["nathankidd@hey.com"]
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
     A CLI tool to create new projects from templates stored in ~/templates.
   DESC
 
-  spec.homepage = "https://github.com/n-at-han-k/mk"
+  spec.homepage = "https://github.com/n-at-han-k/mk.rb"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.2.0"
 
