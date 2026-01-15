@@ -13,9 +13,9 @@ module Mk
       project_name = folder_name.sub(/\..*\z/, "")
       constant_name = project_name.downcase.split(/[-_]/).map(&:capitalize).join
 
-      template_path = File.expand_path("~/templates/#{template_name}")
-      unless Dir.exist?(template_path)
-        puts "Template not found: #{template_path}"
+      template_path = find_template(template_name)
+      unless template_path
+        puts "Template not found: #{template_name}"
         return 1
       end
 
@@ -29,6 +29,16 @@ module Mk
     end
 
     private
+
+    def find_template(template_name)
+      user_path = File.expand_path("~/templates/#{template_name}")
+      return user_path if Dir.exist?(user_path)
+
+      gem_path = File.expand_path("../../templates/#{template_name}", __dir__)
+      return gem_path if Dir.exist?(gem_path)
+
+      nil
+    end
 
     def replace_in_files(folder_name, project_name, constant_name)
       Dir.glob("#{folder_name}/**/*", File::FNM_DOTMATCH).lazy
