@@ -1,4 +1,4 @@
-# mk
+# mk.rb
 
 A CLI tool to create new projects from templates.
 
