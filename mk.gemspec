@@ -8,10 +8,10 @@ Gem::Specification.new do |spec|
   spec.authors = ["Nathan Kidd"]
   spec.email = ["nathankidd@hey.com"]
 
-  spec.summary = "Manage local mirrors of git repositories"
+  spec.summary = "Create new projects from templates"
 
   spec.description = <<~DESC
-    Put a description here.
+    A CLI tool to create new projects from templates stored in ~/templates.
   DESC
 
   spec.homepage = "https://github.com/n-at-han-k/mk"
