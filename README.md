@@ -5,7 +5,7 @@ A CLI tool to create new projects from templates.
 ## Install
 
 ```bash
-gem install mk
+gem install mk.rb
 ```
 
 ## Usage
