@@ -46,6 +46,28 @@ Templates are regular directories containing your project boilerplate. Use these
 
 Placeholders work in both file contents and file/directory names.
 
+#### Example
+
+```bash
+mk ruby my_gem
+```
+
+Template file `~/templates/ruby/lib/examplegem.rb`:
+
+```ruby
+class ExampleGem
+  VERSION = "0.1.0"
+end
+```
+
+Output file `my_gem/lib/my_gem.rb`:
+
+```ruby
+class MyGem
+  VERSION = "0.1.0"
+end
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub.
