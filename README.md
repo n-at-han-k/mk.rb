@@ -1,5 +1,7 @@
 # mk
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/n-at-han-k/mk.rb)
+
 A CLI tool to create new projects from templates.
 
 ## Install
